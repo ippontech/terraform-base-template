@@ -126,6 +126,7 @@ check-release   Check release status
 major-release   Do a major-release, ie : bumped first digit X+1.y.z
 minor-release   Do a minor-release, ie : bumped second digit x.Y+1.z
 patch-release   Do a patch-release, ie : bumped third digit x.y.Z+1
+precommit       Execute some check with precommit hook
 help            Show this help (Run make <target> V=1 to enable verbose)
 ```
 
@@ -138,19 +139,8 @@ help            Show this help (Run make <target> V=1 to enable verbose)
 * Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
 * Limit commit title to 48 characters or less
 * Reference issues and pull requests liberally in commit title/message
-* Consider starting the commit message with an applicable [emoji](https://gitmoji.dev/) like :
-    * :sparkles: `:sparkles:` when introducing new features
-    * :recycle: `:recycle:` when refactoring code
-    * :art: `:art:` when improving the format/structure of the code
-    * :zap: `:zap:` when improving performance
-    * :memo: `:memo:` when writing docs
-    * :bug: `:bug:` when fixing a bug
-    * :fire: `:fire:` when removing code or files
-    * :green_heart: `:green_heart:` when fixing the CI build
-    * :pushpin: `:pushpin:` when pinning dependencies to specific version
-    * :arrow_up: `:arrow_up:` when upgrading dependencies
-    * :arrow_down: `:arrow_down:` when downgrading dependencies
-    * :rotating_light: `:rotating_light:` when removing linter warnings
+* Consider starting the commit message with an applicable :
+  *  Put here your standard for commit message
 
 ### Documentation Styleguide
 

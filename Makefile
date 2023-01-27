@@ -93,8 +93,6 @@ help: .do-help ; @ ## Show this help (Run make <target> V=1 to enable verbose)
 	@. $(RELEASE_SUPPORT) ; setRelease $(VERSION)
 	sed -i -e "s/ref=.*\"/ref=$(VERSION)\"/g" examples/*
 	sed -i -e "s/Release_version-.*-blue/Release_version-$(VERSION)-blue/g" README.md
-	sed -i -e "s/\"version\": \".*\"/\"version\": \"$(VERSION)\"/g" package.json
-	docker container run -it -v ${PWD}:/app --rm yvonnick/gitmoji-changelog:latest update $(VERSION)
 	git add --all
 	SKIP=no-commit-to-branch git commit -m ":bookmark: bumped to version $(VERSION)" ;
 	git tag $(TAG) ;

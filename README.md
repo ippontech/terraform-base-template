@@ -2,11 +2,8 @@
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-![Release](https://img.shields.io/badge/Release_version-0.1.0-blue)
-![Terraform](https://img.shields.io/badge/Terraform_version-~>1.0.0-blue)
-
-[![pipeline status](https://gitlab.laforge.cloud.bpifrance.fr/team/CLD/public/terraform/terraform-base-template/badges/main/pipeline.svg)](https://gitlab.laforge.cloud.bpifrance.fr/team/CLD/public/terraform/aws/modules/<MODULE_NAME>/-/commits/main)
-[![coverage report](https://gitlab.laforge.cloud.bpifrance.fr/team/CLD/public/terraform/terraform-base-template/badges/main/coverage.svg)](https://gitlab.laforge.cloud.bpifrance.fr/team/CLD/public/terraform/aws/modules/<MODULE_NAME>/-/commits/main)
+![Release](https://img.shields.io/badge/Release_version-0.0.0-blue)
+![Terraform](https://img.shields.io/badge/Terraform_version->=1.3.0-blue)
 
 ## Table of Content
 
