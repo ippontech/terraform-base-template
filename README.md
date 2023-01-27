@@ -12,22 +12,19 @@ _This documentation section is generated automatically_
 <!--TOC-->
 
 - [<MODULE_NAME>](#module_name)
-    - [Table of Content](#table-of-content)
-    - [Module Information](#module-information)
-        - [Usage](#usage)
-        - [:warning: Important note](#warning-important-note)
-        - [Terraform docs](#terraform-docs)
-    - [Requirements](#requirements)
-    - [Providers](#providers)
-    - [Modules](#modules)
-    - [Resources](#resources)
-    - [Inputs](#inputs)
-    - [Outputs](#outputs)
-        - [Changelog](#changelog)
+  - [Table of Content](#table-of-content)
+  - [Module Information](#module-information)
+    - [Usage](#usage)
+    - [:warning: Important note](#warning-important-note)
+    - [Terraform docs](#terraform-docs)
+  - [Requirements](#requirements)
+  - [Providers](#providers)
+  - [Modules](#modules)
+  - [Resources](#resources)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+    - [Changelog](#changelog)
 - [About the repository](#about-the-repository)
-- [CI/CD Pipeline](#cicd-pipeline)
-- [Bug Reports & Feature Requests](#bug-reports--feature-requests)
-- [Contributing](#contributing)
 
 <!--TOC-->
 
@@ -52,6 +49,31 @@ You can find some examples of how to use and call this module in the dedicated [
 _This documentation section is generated automatically_
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
+
+## Providers
+
+No providers.
+
+## Modules
+
+No modules.
+
+## Resources
+
+No resources.
+
+## Inputs
+
+No inputs.
+
+## Outputs
+
+No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ### Changelog

@@ -9,15 +9,15 @@ The following is a set of guidelines for contributing to **<MODULE_NAME>**. Thes
 <!--TOC-->
 
 - [Contributing](#contributing)
-    - [Table of Content](#table-of-content)
-    - [Developers Information](#developers-information)
-        - [First steps after having cloned/forked](#first-steps-after-having-clonedforked)
-    - [Tools used](#tools-used)
-        - [Pre-commit](#pre-commit)
-        - [Makefile Usage](#makefile-usage)
-    - [Styleguides](#styleguides)
-        - [Git Commit Messages](#git-commit-messages)
-        - [Documentation Styleguide](#documentation-styleguide)
+  - [Table of Content](#table-of-content)
+  - [Developers Information](#developers-information)
+    - [First steps after having cloned/forked](#first-steps-after-having-clonedforked)
+  - [Tools used](#tools-used)
+    - [Pre-commit](#pre-commit)
+    - [Makefile Usage](#makefile-usage)
+  - [Styleguides](#styleguides)
+    - [Git Commit Messages](#git-commit-messages)
+    - [Documentation Styleguide](#documentation-styleguide)
 
 <!--TOC-->
 
