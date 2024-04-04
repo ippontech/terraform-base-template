@@ -1,7 +1,7 @@
 default_stages: [commit]
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-merge-conflict
       - id: no-commit-to-branch
@@ -9,21 +9,20 @@ repos:
           - --branch=main
 
   - repo: https://github.com/frnmst/md-toc
-    rev: 8.1.8
+    rev: 8.2.3
     hooks:
       - id: md-toc
         language_version: python3
 
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.77.0
+    rev: v1.88.4
     hooks:
       - id: terraform_docs
       - id: terraform_fmt
       - id: terraform_tflint
         args:
           - 'args=--deep'
-      - id: terraform_tfsec
-        exclude: ^examples/
+      - id: terraform_trivy
 
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.4.0
@@ -33,7 +32,7 @@ repos:
         exclude: .*/tests/.*
 
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.4.0
+    rev: v9.13.0
     hooks:
       - id: commitlint
         args: ['--config', '.pre-commit-config/commitlint.config.js']
@@ -41,7 +40,7 @@ repos:
         additional_dependencies: ['@commitlint/config-conventional']
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -53,47 +52,41 @@ repos:
       - id: requirements-txt-fixer
 
   - repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v2.0.1
+    rev: v2.0.4
     hooks:
       - id: autopep8
 
   - repo: https://github.com/pre-commit/pre-commit
-    rev: v3.0.1
+    rev: v3.5.0
     hooks:
       - id: validate_manifest
+        args: [--py36-plus]
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.1
+    rev: v3.15.2
     hooks:
       - id: pyupgrade
         args: [--py36-plus]
 
   - repo: https://github.com/asottile/reorder_python_imports
-    rev: v3.9.0
+    rev: v3.12.0
     hooks:
       - id: reorder-python-imports
         args: [--py3-plus]
 
   - repo: https://github.com/asottile/add-trailing-comma
-    rev: v2.4.0
+    rev: v3.1.0
     hooks:
       - id: add-trailing-comma
         args: [--py36-plus]
 
   - repo: https://github.com/asottile/setup-cfg-fmt
-    rev: v2.2.0
+    rev: v2.5.0
     hooks:
       - id: setup-cfg-fmt
 
-  - repo: https://github.com/ambv/black
-    rev: 22.12.0
-    hooks:
-      - id: black
-        language_version: python3
-        args: ['--config', '.pre-commit-config/pyproject.toml']
-
   - repo: https://github.com/pycqa/flake8
-    rev: 6.0.0
+    rev: 7.0.0
     hooks:
       - id: flake8
         args: ['--config', '.pre-commit-config/.flake8']
