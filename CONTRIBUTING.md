@@ -14,6 +14,17 @@ The following is a set of guidelines for contributing to **<MODULE_NAME>**. Thes
     - [First steps after having cloned/forked](#first-steps-after-having-clonedforked)
   - [Tools used](#tools-used)
     - [Pre-commit](#pre-commit)
+      - [The main hooks configured](#the-main-hooks-configured)
+        - [Linting](#linting)
+          - [terraform_tflint](#terraform_tflint)
+          - [terraform-fmt](#terraform-fmt)
+          - [terraform_docs](#terraform_docs)
+          - [md-toc](#md-toc)
+        - [Security](#security)
+          - [detect-secrets](#detect-secrets)
+          - [trivy](#trivy)
+      - [Install dependencies](#install-dependencies)
+      - [Usage Pre-commit](#usage-pre-commit)
     - [Makefile Usage](#makefile-usage)
   - [Styleguides](#styleguides)
     - [Git Commit Messages](#git-commit-messages)
@@ -70,10 +81,6 @@ To ensure an automatic correction of the terraform code and keep a good indentat
 
 For compliance we use `terraform_docs` tools, this will update the readme automatically with terraform inputs and outputs.
 
-###### shellcheck
-
-To check the quality of linux code and make automatic corrections, we use `shellcheck`
-
 ###### md-toc
 
 To ensure an automatic generation of markdown *Table of content*, the `md-toc` hook is used.
@@ -85,9 +92,9 @@ To ensure an automatic generation of markdown *Table of content*, the `md-toc` h
 Not to commit a key, access key or credential in clear on gitlab, we've set up the `detect-secrets` hook
 which will alert before committing chosen sensitive secrets. This hook comes with the `.secrets.baseline` file to chose which secrets you want to catch.
 
-###### tfsec
+###### trivy
 
-To avoid committing aws resources presenting security vulnerabilities, we use `tfsec` which allows to analyze the deployed resources and indicates what is not in accordance with good security practice rules.
+To avoid committing aws resources presenting security vulnerabilities, we use `trivy` which allows to analyze the deployed resources and indicates what is not in accordance with good security practice rules.
 
 #### Install dependencies
 

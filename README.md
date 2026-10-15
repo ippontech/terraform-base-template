@@ -16,6 +16,7 @@ _This documentation section is generated automatically_
   - [Module Information](#module-information)
     - [Usage](#usage)
     - [:warning: Important note](#warning-important-note)
+      - [Examples](#examples)
     - [Terraform docs](#terraform-docs)
   - [Requirements](#requirements)
   - [Providers](#providers)
@@ -52,7 +53,7 @@ _This documentation section is generated automatically_
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
 
 ## Providers
@@ -82,4 +83,4 @@ Release notes are available [here](./CHANGELOG.md).
 
 # About the repository
 
-This repository uses [pre-commit](https://pre-commit.com/) and a [Makefile](https://www.gnu.org/software/make/manual/make.html). You'll find more information about it in the [contributing section](./#contributing).
+This repository uses [pre-commit](https://pre-commit.com/) and a [Makefile](https://www.gnu.org/software/make/manual/make.html). You'll find more information about it in the [contributing section](./CONTRIBUTING.md).

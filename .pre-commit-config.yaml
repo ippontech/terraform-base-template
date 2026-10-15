@@ -9,7 +9,7 @@ repos:
           - --branch=main
 
   - repo: https://github.com/frnmst/md-toc
-    rev: 8.2.3
+    rev: 9.0.0
     hooks:
       - id: md-toc
         language_version: python3
